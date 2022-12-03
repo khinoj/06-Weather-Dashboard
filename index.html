@@ -8,36 +8,73 @@
     <link rel="stylesheet" href="./Assets/css/style.css">
     <title>Weather</title>
 </head>
-
+<!-- //header -->
 <header>
     <h1>Weather Dashboard</h1>
 </header>
+<!-- Header End -->
 <body>
     <main>
-    <aside>
+        <!-- Side Section -->
+    <aside>      
         <section>
             <h2>Search for a City:</h2>
+            <!-- Enter a Specific city to searched -->
             <form>
-                <input placeholder=" Enter a City" id="user-input">
-                <button id="search-btn"> Search </button>
+                <input placeholder=" Enter a City" id="userinput">
+                <button id="searchbtn"> Search </button>
             </form>
+            <!-- Enter a Specific city to searched End-->
         </section>
-        <section id="major-city">
-            <button class="major-city"> Atlanta </button>
-            <button class="major-city"> Denver </button>
-            <button class="major-city"> Seattle </button>
-            <button class="major-city"> San Francisco </button>
-            <button class="major-city"> Orlando </button>
-            <button class="major-city"> New York </button>
-            <button class="major-city"> Chicago </button>
-            <button class="major-city"> Austin </button>
+        <section id="majorcity">
+            <!-- Pre-set Popular City -->
+            <button class="majorcities"> Atlanta </button>
+            <button class="majorcities"> Denver </button>
+            <button class="majorcities"> Seattle </button>
+            <button class="majorcities"> San Francisco </button>
+            <button class="majorcities"> Orlando </button>
+            <button class="majorcities"> New York </button>
+            <button class="majorcities"> Chicago </button>
+            <button class="majorcities"> Austin </button>
+            <!-- Pre-set Popular City End-->
         </section>
     </aside>
-        <section id="weather-info">
-            <div id="city-info">
-                <h2>City Info</h2>
+    <!-- Side Section End -->
+
+    <!-- Main Weather Table -->
+        <section id="weatherinfo">
+            <div id="day1forecast">
+                <h2>City:<span class="day1City"></span></h2>
+                <h2>Temperature:<span class="day1Temperature"></span></h2>
+                <h2>Humidity:<span class="day1Humidity"></span></h2>
+                <h2>Wind:<span class="day1Wind"></span></h2>
+            </div>
+            <div id="day2forecast">
+                <h2>City:<span class="day2City"></span></h2>
+                <h2>Temperature:<span class="day2Temperature"></span></h2>
+                <h2>Humidity:<span class="day2Humidity"></span></h2>
+                <h2>Wind:<span class="day2Wind"></span></h2>
+            </div>
+            <div id="day3forecast">
+                <h2>City:<span class="day3City"></span></h2>
+                <h2>Temperature:<span class="day3Temperature"></span></h2>
+                <h2>Humidity:<span class="day3Humidity"></span></h2>
+                <h2>Wind:<span class="day3Wind"></span></h2>
+            </div>
+            <div id="day4forecast">
+                <h2>City:<span class="day4City"></span></h2>
+                <h2>Temperature:<span class="day4Temperature"></span></h2>
+                <h2>Humidity:<span class="day4Humidity"></span></h2>
+                <h2>Wind:<span class="day4Wind"></span></h2>
+            </div>
+            <div id="day5forecast">
+                <h2>City:<span class="day5City"></span></h2>
+                <h2>Temperature:<span class="day5Temperature"></span></h2>
+                <h2>Humidity:<span class="day5Humidity"></span></h2>
+                <h2>Wind:<span class="day5Wind"></span></h2>
             </div>
         </section>
+        <!-- Main Weather Table End -->
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="Assets/js/script.js"></script>    
