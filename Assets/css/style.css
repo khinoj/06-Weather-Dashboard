@@ -40,7 +40,7 @@ input {
 }
 
 #searchbtn {
-    background-color:cornflowerblue;
+    background-color:rgb(36, 107, 240);
 }
 
 button {
@@ -59,7 +59,7 @@ button {
 
 
 .majorcities {
-    background-color: aqua;
+    background-color: rgb(46, 207, 207);
 }
 
 #weatherinfo {
