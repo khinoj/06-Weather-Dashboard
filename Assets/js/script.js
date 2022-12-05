@@ -17,6 +17,26 @@ const openWeather_API_KEY = '5c36e0b211379adb9db1348735cb898b'
 
 // })
 
+$("#searchbtn").click(function () {
+    var input = $('#userinput').val()
+    console.log(input)
+    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${$(input).text()}&units=imperial&appid=${openWeather_API_KEY}`)
+        .then((response) => response.json())
+        .then(forecastResponse => {
+            console.log('Daily Forecast Response', forecastResponse)
+            for (let data of forecastResponse.list) {
+                console.log('data', data)
+                for (let weatherData of data.weather) {
+                    console.log('data', data)
+                }
+            }
+        })
+        .catch((error) => {
+            console.log(`Error: ${error.message}`);
+        });
+})
+
+
 
 $(".majorcities").click(function () {
     console.log('Button Val', $(this).text())
@@ -37,7 +57,6 @@ $(".majorcities").click(function () {
                                 <div class="card-body">
                                     <h5 class="card-title">${data.dt_txt.split(' ')[0]} ${data.dt_txt.split(' ')[1]}</h5>
                                     <p class="card-text"> High Temp ${data.main.temp_max} Low Temp ${data.main.temp_min} Humidity ${data.main.humidity}<div/></p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>                        
                         </div>
