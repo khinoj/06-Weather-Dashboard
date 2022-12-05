@@ -2,8 +2,8 @@
 const openWeather_API_KEY = '5c36e0b211379adb9db1348735cb898b'
 // let baseUrl = 'http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${openWeather_API_KEY}'
 // let unitOfMeasure = 'imperial'
-let city = "Seattle"
-let url
+// let city = "Seattle"
+// let url
 
 
 // grab text from button
