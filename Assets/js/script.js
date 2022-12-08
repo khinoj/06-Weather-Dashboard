@@ -18,9 +18,7 @@ const openWeather_API_KEY = '5c36e0b211379adb9db1348735cb898b'
 // })
 
 $("#searchbtn").click(function () {
-    var input = $('#userinput').val()
-    console.log(input)
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${$(input).text()}&units=imperial&appid=${openWeather_API_KEY}`)
+    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${$('#userinput').val()}&units=imperial&appid=${openWeather_API_KEY}`)
         .then((response) => response.json())
         .then(forecastResponse => {
             console.log('Daily Forecast Response', forecastResponse)
@@ -35,7 +33,6 @@ $("#searchbtn").click(function () {
             console.log(`Error: ${error.message}`);
         });
 })
-
 
 
 $(".majorcities").click(function () {
