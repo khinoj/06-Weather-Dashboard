@@ -1,12 +1,16 @@
 # ## Kris Hinojosa: 06 Server-Side APIs: Weather Dashboard
 
-## url
+## URl
+
+https://github.com/khinoj/06-Weather-Dashboard
+
 
 
 
 ## Screenshot
 
-![](./assets/images/web_quiz_image.png)
+![](./Assets/images/weather_screenshot.PNG)
+
 
 ## Acceptance Criteria
 
