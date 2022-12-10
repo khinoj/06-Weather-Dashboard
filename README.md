@@ -5,6 +5,7 @@
 https://github.com/khinoj/06-Weather-Dashboard
 
 
+https://khinoj.github.io/06-Weather-Dashboard/
 
 
 ## Screenshot
